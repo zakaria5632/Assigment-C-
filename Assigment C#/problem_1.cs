@@ -22,7 +22,11 @@ namespace Assigment_C_
         public problem_1()
         {
             InitializeComponent();
-            //PopulateBookList();
+            PopulateBookList();
+        }
+        private void PopulateBookList()
+        {
+            comboBox1.Items.AddRange(books.Keys.ToArray());
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,7 +42,8 @@ namespace Assigment_C_
             {
                 MessageBox.Show("Select Book ");
             }
-            else if(books.ContainsKey(selctedBook)) { 
+            else if(books.ContainsKey(selctedBook))
+            { 
             Authorlbl.Text = books[selctedBook];
             }
             else { Authorlbl.Text = "Author not Found"; }

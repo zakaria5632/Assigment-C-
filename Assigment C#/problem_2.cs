@@ -46,12 +46,11 @@ namespace Assigment_C_
             MessageBox.Show("FOUR");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       /* private void button1_Click(object sender, EventArgs e)
         {
             problem_1 Npage = new problem_1();
+            this.Hide();
             Npage.Show();
-            this.Close();
-            
-        }
+        }*/
     }
 }
